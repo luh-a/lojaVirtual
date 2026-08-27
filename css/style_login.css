@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* criação das variáveis */
+:root{    /* variável de cor para alteração mais fácil do projeto geral sem precisar ir de um em um */
+    --cor_principal: hsl(39, 36%, 91%);
+    --cor_botao: #fff6c0;
+    --cor_lnk_menu: #ffffff;
+    --cor_vermelha: hsl(0, 100%, 75%);
+    --cor_suave: #30676b;
+}
+
+*{
+    font-family: roboto;
+    box-sizing: border-box;
+    background-color: var(--cor_principal);
+}
+
+#painel{
+    align-items: center;
+}
+
+#logo{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+}
+
+#logo img{
+    width: 250px;
+    height: 250px;
+    align-items: center;
+    justify-content: center;
+}
+
+#login{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    color: var(--cor_suave);
+}
+
+.input_login{
+    width: auto;
+    height: 40px;
+    border-radius: 5px;
+    margin: 5px;
+    text-align: center;
+}
+
+.login_senha, .login_email{
+    margin: 5px;
+}
+
+#btn_login{
+    width: 100px;
+    height: 23px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--cor_suave);
+    color: var(--cor_lnk_menu);
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 50px;
+}
+
+.login_cadastro{
+    font-size: 0.8em;
+}
+
+.login_cadastro a:link{
+    color: var(--cor_suave);
+    text-decoration: none;
+}
+
+.login_cadastro a:hover{
+    font-size: 1.0em;
+    text-decoration: underline;
+}
