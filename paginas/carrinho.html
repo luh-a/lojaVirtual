@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Loja virtual </title>
+
+    <!-- link para favicon -->
+    <link rel="shortcut icon" href="../loja_virtual/icones/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="../css/style_carrinho.css">
+
+    <script src="../js/carrinho.js" defer type="module"></script>
+
+</head>
+
+<body>
+    <main id="geral">
+        <header id="cabecalho">
+            <div id="logo">
+                <a href="../index.html">
+                    <img src="../icones/logo.png" alt="logo">
+                </a>
+            </div>
+
+            <nav id="menu">
+                <!-- "nav" = usado para criação de menus-->
+                <ul>
+                    <li><a href="../index.html" class="link_menu"> Home </a></li>
+                    <li><a href="../paginas/cadastro.html" class="link_menu"> Cadastro </a></li>
+                    <li><a href="../paginas/sobre.html" class="link_menu"> Sobre </a></li>
+                </ul>
+            </nav>
+
+            <div id="div-icones">
+                <ul>
+                    <li><a href="../paginas/login.html" class="link_icone"><img src="../icones/login.png" alt=""></a></li>
+                    <li><a href="../paginas/carrinho.html" class="link_icone"><img src="../icones/carrinho.png" alt=""></a></li>
+                </ul>
+            </div>
+        </header>
+
+        <section id="pesquisa">
+            <input type="text" name="pesquisa" id="pesquisa" placeholder="Digite seu produto">
+        </section>
+
+        <section id="carrinho">
+            <!-- os itens do carrinho são inseridos aqui dinamicamente pelo carrinho.js,
+                 a partir dos dados salvos em localStorage ('itensSessao') -->
+            <section id="itens-carrinho">
+            </section>
+
+            <div id="valores-carrinho">
+                <div id="div-cep">
+                    <h2 class="titulo-valores-carrinho"> CEP </h2>
+                    <div id="input-cep"><input type="text" name="input-cep" id="input-cep" class="input-cep"></div>
+                </div>
+
+                <div id="div-calc-valor">
+                    <h2 class="titulo-valores-carrinho"> Valor Total: </h2>
+                    <p id="valor-total" class="valor"> R$0,00 </p>
+
+                    <h2 class="titulo-valores-carrinho"> Valor Frete: </h2>
+                    <p id="valor-frete" class="valor"> R$0,00 </p>
+                </div>
+
+                <div id="div-calc-valor-pagar">
+                    <h2 class="titulo-valores-carrinho"> Total a pagar: </h2>
+                    <p id="valor-pagar" class="valor"> R$0,00 </p>
+                </div>
+
+                <button id="btn-continuar" class="btn-carrinho"> Continuar compra </button>
+                <button id="btn-finalizar" class="btn-carrinho"> Finalizar compra </button>
+
+            </div>
+            
+        </section>
+
+        <footer id="rodape">
+            <div id="dadosloja">
+                <h2> Rua das Acácias - Farolândia </h2>
+                <h1> Aracaju - Sergipe </h1>
+            </div>
+
+            <div id="icones-sociais">
+                <ul>
+                    <li><a href="https://www.instagram.com/seu_usuario"><img src="../icones/instagram.png" alt=""></a></li>
+                    <li><a href="https://www.facebook.com/seu_usuario"><img src="../icones/facebook.png" alt=""></a></li>
+                </ul>
+            </div>
+
+            <div id="div-cartoes">
+                <img src="../icones/hipercard.png" alt="Hipercard" class="bandeiras">
+                <img src="../icones/visa.png" alt="Visa" class="bandeiras">
+                <img src="../icones/master_card.png" alt="Mastercard" class="bandeiras">
+                <img src="../icones/pix.png" alt="pix" class="pix">
+            </div>
+        </footer>
+        <!--h-->
+    </main>
+    
+</body>
+
+</html>
