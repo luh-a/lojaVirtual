@@ -1,0 +1,60 @@
+@import url(style_estrutura_paginas.css);
+
+/* formatando section */
+#formulario{
+    width: 100%;
+    min-width: 600px;
+    padding: 20px;
+}
+
+h3{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 30px 0px;
+}
+
+label{
+    display: block;
+    margin: 20px 0px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.input01, .input02{
+    border: none;
+    border-bottom: solid 1px var(--cor_principal);
+    font-size: 1.3em;
+    padding: 5px;
+}
+
+.input01{
+    width: 800px;
+}
+
+.input02{
+    width: 400px;
+}
+
+#div-btns{
+    height: 60px;
+    margin: 40px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#div-btns button{
+    width: 200px;
+    height: 40px;
+    margin-left: 20px;
+    background-color: var(--cor_suave);
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 0.8em;
+    letter-spacing: 5px;
+}
+
+.oculto{
+    display: none;
+}
