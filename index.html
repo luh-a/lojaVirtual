@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Loja virtual </title>
+
+    <!-- link para favicon -->
+    <link rel="shortcut icon" href="../icones/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="css/style_estrutura_paginas.css">
+
+    <script src="js/carrega_produtos.js" type="module" defer></script>
+    
+</head>
+
+<body>
+    <main id="geral">
+        <header id="cabecalho">
+            <!-- criação da parte azul da imagem de ref --> 
+
+            <!-- favicon -->
+            <div id="logo">
+                <a href="index.html">
+                    <img src="icones/logo.png" alt="logo">
+                </a>
+            </div>
+
+            <nav id="menu">
+                <!-- "nav" = usado para criação de menus-->
+                <ul>
+                    <li><a href="index.html" class="link_menu"> Home </a></li>
+                    <li><a href="paginas/cadastro.html" class="link_menu"> Cadastro </a></li>
+                    <li><a href="paginas/sobre.html" class="link_menu"> sobre </a></li>
+                </ul>
+            </nav>
+
+            <div id="div-icones">
+                <ul>
+                    <li><a href="paginas/login.html" class="link_icone"><img src="icones/login.png" alt=""></a></li>
+                    <li><a href="paginas/carrinho.html" class="link_icone"><img src="icones/carrinho.png" alt=""></a></li>
+                </ul>
+            </div>
+        </header>
+
+        <!-- abaixo do header (cabeçalho) mas dentro da main -->
+
+        <nav id="nav-secao">
+            <ul id="menu_secoes">
+                <!-- aqui tem os filtros de linhas, lãs etc -->
+            </ul>
+        </nav>
+
+        <section id="pesquisa">
+            <input type="text" name="pesquisa" id="pesquisa" placeholder="Digite seu produto">
+        </section>
+
+        <section id="cards">
+            <div class="card">
+                <img src="imagens/circulo harmony.jfif" alt="Harmony" class="img_card">
+
+                <h2 class="tito_card"> Harmony </h2>
+
+                <h3 class="valor_card">
+                    R$ 45,00
+                </h3>
+
+                <button class="btn_card"> Adicionar </button>
+            </div>
+
+            <div class="card">
+                <img src="imagens/circulo hobby.jfif" alt="Hobby" class="img_card">
+
+                <h2 class="tito_card"> Hobby </h2>
+
+                <h3 class="valor_card">
+                    R$ 40,00
+                </h3>
+
+                <button class="btn_card"> Adicionar </button>
+            </div>
+
+            <div class="card">
+                <img src="imagens/circulo mollet.jfif" alt="Mollet" class="img_card">
+
+                <h2 class="tito_card"> Mollet </h2>
+
+                <h3 class="valor_card">
+                    R$ 15,00
+                </h3>
+
+                <button class="btn_card"> Adicionar </button>
+            </div>
+
+            <div class="card">
+                <img src="imagens/cisne d_primeira.jfif" alt="D'primeira" class="img_card">
+
+                <h2 class="tito_card"> D'primeira </h2>
+
+                <h3 class="valor_card">
+                    R$ 10,00
+                </h3>
+
+                <button class="btn_card"> Adicionar </button>
+            </div>
+
+            <div class="card">
+                <img src="imagens/euroma fiore.jfif" alt="Fiore" class="img_card">
+
+                <h2 class="tito_card"> Fiore </h2>
+
+                <h3 class="valor_card">
+                    R$ 30,00
+                </h3>
+
+                <button class="btn_card"> Adicionar </button>
+            </div>
+
+            <div class="card">
+                <img src="imagens/milano novelo.jfif" alt="Milano" class="img_card">
+
+                <h2 class="tito_card"> Milano </h2>
+
+                <h3 class="valor_card">
+                    R$ 25,00
+                </h3>
+
+                <button class="btn_card"> Adicionar </button>
+            </div>
+
+            <div class="card">
+                <img src="imagens/pack 120.jfif" alt="Pack 120" class="img_card">
+
+                <h2 class="tito_card"> Pack 120 </h2>
+
+                <h3 class="valor_card">
+                    R$ 50,00
+                </h3>
+
+                <button class="btn_card"> Adicionar </button>
+            </div>
+
+            <div class="card">
+                <img src="imagens/porta novelo.jfif" alt="Porta novelo" class="img_card">
+
+                <h2 class="tito_card"> Porta novelo </h2>
+
+                <h3 class="valor_card">
+                    R$ 45,00
+                </h3>
+
+                <button class="btn_card"> Adicionar </button>
+            </div>
+
+        </section>
+
+        <footer id="rodape">
+            <div id="dadosloja">
+                <h2> Rua das Acácias - Farolândia </h2>
+                <h1> Aracaju - Sergipe </h1>
+            </div>
+
+            <div id="icones-sociais">
+                <ul>
+                    <li><a href="https://www.instagram.com/seu_usuario"><img src="icones/instagram.png" alt=""></a></li>
+                    <li><a href="https://www.facebook.com/seu_usuario"><img src="icones/facebook.png" alt=""></a></li>
+                </ul>
+            </div>
+
+            <div id="div-cartoes">
+                <img src="icones/hipercard.png" alt="Hipercard" class="bandeiras">
+                <img src="icones/visa.png" alt="Visa" class="bandeiras">
+                <img src="icones/master_card.png" alt="Mastercard" class="bandeiras">
+                <img src="icones/pix.png" alt="pix" class="pix">
+            </div>
+        </footer>
+
+    </main>
+    
+</body>
+</html>
