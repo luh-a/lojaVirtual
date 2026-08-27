@@ -1,0 +1,39 @@
+@import url(style_estrutura_paginas.css);
+
+#nossaHistoria, #texto {
+    width: 100%;
+    background-color: var(--cor_principal);
+    padding: var(--espaco_lg);
+    text-align: justify;
+    border-radius: 10px;
+}
+
+#nossaHistoria {
+    font-size: 1.3em;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#texto {
+    font-size: 1em;
+    line-height: 1.6;
+    margin: var(--espaco_md) 0px;
+}
+
+.paragrafo {
+    margin: var(--espaco_md) 0px;
+    text-align: justify;
+}
+
+/* responsividade */
+
+@media (max-width: 600px){
+    #nossaHistoria, #texto{
+        padding: var(--espaco_md);
+    }
+
+    #nossaHistoria{
+        font-size: 1.1em;
+    }
+}
