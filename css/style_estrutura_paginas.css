@@ -1,0 +1,241 @@
+/* importação de fonte */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* atribuição geral (todos os elementos) */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box; /* garante que ficará tudo do mesmo tamanho ("dimensão adaptável") */
+    font-family: roboto;
+}
+
+/* criação das variáveis */
+:root{    /* variável de cor para alteração mais fácil do projeto geral sem precisar ir de um em um */
+    --cor_principal: hsl(39, 36%, 91%);
+    --cor_botao: #fff6c0;
+    --cor_lnk_menu: #ffffff;
+    --cor_vermelha: hsl(0, 100%, 75%);
+    --cor_suave: #30676b;
+}
+
+#geral{
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#cabecalho{     /* ou header */
+    width: 100%;
+    height: 200px;
+    background-color: var(--cor_principal);
+    padding: 5px 25px;
+    margin: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* alterando o tamanho da imagem */
+#logo img{
+    width: 170px;
+    height: 150px;
+}
+
+/* configurando nav pelo id */
+#menu{
+    width: 600px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* configuração dos li do ul do cabeçalho na horizontal */
+#cabecalho, ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+/* configuração das seções */
+#nav-secao, li{
+    list-style: none;
+}
+
+#nav-secao{
+    width: auto;
+    height: auto;
+    display: flex;
+    gap: 20px;
+}
+
+.lnk_secao:link, .lnk_secao:visited{
+    color: var(--cor_suave);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.right{
+    border-right: solid var(--cor_principal);
+    padding-right: 20px;
+}
+
+.left{
+    border-left: solid var(--cor_principal);
+    padding-left: 20px;
+}
+
+.lnk_secao:hover{
+    font-size: 1.2em;
+}
+
+/* configurando o tamanho dos ícones */
+#div-icones img{
+    width: 70px;
+    height: 60px;
+}
+
+/* formatação do menu */
+#menu a:link{
+    font-size: 1.3em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--cor_suave);
+}
+
+#menu a:visited{   /* já visitadas */
+    font-size: 1.3em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--cor_lnk_menu);
+}
+
+#menu a:hover{   /* ao passar o cursor do mouse */
+    font-size: 1.6em;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+#menu a:active{   /* ao clicar */
+    font-size: 1.3em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--cor_suave);
+}
+
+/* formatação section pelo id */
+#pesquisa{
+    width: 1000px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#pesquisa input{
+    width: 500px;
+    height: 50px;
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 2em;
+}
+
+/* fromataçõ cards */
+#cards{
+    background-color: var(--cor_principal);
+    width: 98%;
+    min-height: 600px;
+    margin: 20px 0px;
+    padding: 10px;
+    /* display: grid = trata os elementos como uma tabela */
+    display: grid;
+    /* distribuição das colunas*/
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    cursor: pointer;
+}
+
+.card{
+    width: 250px;
+    min-height: 250px;
+    border: solid 1px var(--cor_botao);
+    border-radius: 5px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card:hover{
+    transform: translateY(-5px);
+}
+
+.card h2{
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin: 20px 0px;
+}
+
+.card h3{
+    margin: 20px 0px;
+}
+
+.card button{
+    width: 100%;
+    height: 45px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    border: none;
+    background-color: var(--cor_suave);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card img{
+    width: auto;
+    height: 150px;
+}
+
+/* formatação rodapé */
+#rodape{
+    width: 100%;
+    height: 300px;
+    background-color: var(--cor_principal);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#dadosloja{
+    font-size: 0.8em;
+}
+
+#icones-sociais ul{
+    list-style: none;
+}
+
+#icones-sociais img{
+    width: 25px;
+    height: 25px;
+}
+
+.pix {
+    width: 90px;
+    height: 40px;
+
+}
+
+.bandeiras {
+    width: 70px;
+    height: 55px;
+    margin: 5px;
+}
+
+#div-cartoes{
+    display:flex ;
+    align-items: center;  /* alinhamento horizontal */
+    justify-content: space-between; /* alinhamento vertical */
+}
