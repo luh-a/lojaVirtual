@@ -87,6 +87,17 @@ const renderCarrinho = () => {
 
     container.innerHTML = ''
 
+    // se não há itens, mostra mensagem de carrinho vazio e para por aqui
+    if (itensCarrinho.length === 0) {
+        container.innerHTML = `
+            <p id="carrinho-vazio">
+                Seu carrinho está vazio. <a href="../index.html">Continue comprando</a>
+            </p>
+        `
+        calcularTotais()
+        return
+    }
+
     itensCarrinho.forEach((item, pos) => {
         const totalItem = item.valor_unitario * item.quantidade
 

@@ -112,7 +112,7 @@
     font-size: 1.0em;
     text-transform: uppercase;
     text-decoration: none;
-    color: var(--cor_lnk_menu);
+    color: var(--cor_suave);
 }
 
 #menu a:hover{   /* ao passar o cursor do mouse */
@@ -135,14 +135,27 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 10px;
 }
 
 #pesquisa input{
     width: 500px;
-    height: 5px;
-    padding: 20px;
-    border-radius: 8px;
-    font-size: 1em;
+    height: auto;
+    padding: 5px;
+    border: solid 1px var(--cor_suave);
+    border-radius: 25px;
+    font-size: 0.95em;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+#pesquisa input:focus{
+    border-color: var(--cor_suave);
+    box-shadow: 0 0 0 3px rgba(48, 103, 107, 0.15);
+}
+
+#pesquisa input::placeholder{
+    color: #999;
 }
 
 /* fromataçõ cards */
@@ -155,21 +168,28 @@
     /* display: grid = trata os elementos como uma tabela */
     display: grid;
     /* distribuição das colunas*/
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+    gap: 15px;
     cursor: pointer;
+    border-radius: 10px;
 }
 
 .card{
-    width: 250px;
-    min-height: 250px;
+    width: 100%;
+    height: 290px;
     border: solid 1px var(--cor_botao);
     border-radius: 5px;
-    padding: 15px;
+    padding: 12px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+}
+
+.card img{
+    width: 100%;
+    height: 110px;
+    object-fit: contain;
 }
 
 .card:hover{
@@ -178,67 +198,95 @@
 
 .card h2{
     text-transform: uppercase;
-    letter-spacing: 5px;
-    margin: 20px 0px;
+    letter-spacing: 2px;
+    margin: 10px 0px;
+    font-size: 0.8em;
+    text-align: center;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
 }
 
 .card h3{
-    margin: 20px 0px;
+    margin: 8px 0px;
+    font-size: 0.9em;
 }
 
 .card button{
     width: 100%;
-    height: 45px;
+    height: 38px;
     text-transform: uppercase;
-    letter-spacing: 5px;
+    letter-spacing: 3px;
+    font-size: 0.8em;
     border: none;
     background-color: var(--cor_suave);
     border-radius: 5px;
     cursor: pointer;
-}
-
-.card img{
-    width: auto;
-    height: 150px;
+    margin-top: auto;
 }
 
 /* formatação rodapé */
 #rodape{
     width: 100%;
-    height: 300px;
+    height: auto;
+    padding: 30px 40px;
     background-color: var(--cor_principal);
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 70px;
+    border-radius: 20px;
 }
 
 #dadosloja{
     font-size: 0.8em;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+#dadosloja h2{
+    font-size: 0.95em;
+    font-weight: 600;
+}
+
+#dadosloja h2::after{
+    content: ",";
+}
+
+#dadosloja h1{
+    font-size: 0.95em;
+    font-weight: 700;
 }
 
 #icones-sociais ul{
     list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 
 #icones-sociais img{
-    width: 25px;
-    height: 25px;
+    width: 22px;
+    height: 22px;
 }
 
 .pix {
-    width: 90px;
-    height: 40px;
-
+    width: auto;
+    height: 24px;
+    object-fit: contain
 }
 
 .bandeiras {
-    width: 70px;
-    height: 55px;
-    margin: 5px;
+    width: auto;
+    height: 24px;
+    margin: 0px;
 }
 
 #div-cartoes{
     display:flex ;
     align-items: center;  /* alinhamento horizontal */
-    justify-content: space-between; /* alinhamento vertical */
+    justify-content: center; /* alinhamento vertical */
+    gap: 14px;
 }
