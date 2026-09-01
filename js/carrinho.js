@@ -105,7 +105,7 @@ const renderCarrinho = () => {
         secao.className = 'item'
 
         secao.innerHTML = `
-            <img src="${item.caminho_da_imagem}" alt="${item.descricao_produto}" class="img-item">
+            <img src="../${item.caminho_da_imagem}" alt="${item.descricao_produto}" class="img-item">
             <p class="descricao"> ${item.descricao_produto} </p>
             <p class="vlr-unitario"> ${formatarMoeda(item.valor_unitario)} </p>
             <input type="number" name="quant${pos}" class="input-item" min="1" value="${item.quantidade}">
